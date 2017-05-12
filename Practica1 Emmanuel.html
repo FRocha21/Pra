@@ -1,22 +1,47 @@
-<!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" type="text/css" href="css/master.css">
-	<title>Practica CSS</title>
+<title>Calculadora Practica 4</title>
 </head>
-<body class="en">
-<div id="Encabezado" class="Encabezado">
-	<h1 class="Titulo"> Jose Fernando Rocha Perez </h1>
-</div>
-<div id="Foto" class="der">
-	<img src="Image/10.jpg" style="width: 50%;border-radius: 50%">
-</div>
-<div id="Inf" class="Inf" style="width: 100%;background-color: blue">
-	<h2 class="title"> Soy Jose Fernando Rocha Perez, tengo 18, estudio en el CECyTE Irapuato II, vivo en Irapuato, me gusta jugar futbol, entrenar muay thai y salir con mi novia</h2>
-</div>
-<div id="Contacto" style="width: 100%;background-color: green; float:right;">
-	<h3>Correo: elrochaayuda@hotmail.com o al telefono: 4629875432</h3>
-</div>
+<style type="text/css"></style>
+<body class="fondo">
 
+<form name="calculator">
+<td>
+<table class="cont">
+<p id="hola">Calculadora Practica 4</p>
+<p class="nums1">
+<input type="button" value="1" onClick="document.calculator.ans.value+='1'">
+<input type="button" value="2" onClick="document.calculator.ans.value+='2'">
+<input type="button" value="3" onClick="document.calculator.ans.value+='3'">
+<input type="button" value="4" onClick="document.calculator.ans.value+='4'">
+</p>
+ 
+ <p class="nums2">
+<input type="button" value="5" onClick="document.calculator.ans.value+='5'">
+<input type="button" value="6" onClick="document.calculator.ans.value+='6'">
+<input type="button" value="7" onClick="document.calculator.ans.value+='7'">
+<input type="button" value="8" onClick="document.calculator.ans.value+='8'">
+ </p>
+
+ <p class="nums3">
+<input type="button" value="9" onClick="document.calculator.ans.value+='9'">
+<input type="button" value="0" onClick="document.calculator.ans.value+='0'">
+<input type="button" value="+" onClick="document.calculator.ans.value+='+'">
+<input type="button" value="-" onClick="document.calculator.ans.value+='-'">
+ </p>
+
+ <p class="nums4">
+ <input type="button" value="*" onClick="document.calculator.ans.value+='*'">
+<input type="button" value="/" onClick="document.calculator.ans.value+='/'">
+<input type="reset" value="C">
+<input type="button" value="=" onClick="document.calculator.ans.value=eval(document.calculator.ans.value)">
+</p>
+
+</table>
+</td>
+
+<br>El resultado es <input type="textfield" name="ans" value="">
+
+</form>
 </body>
 </html>
